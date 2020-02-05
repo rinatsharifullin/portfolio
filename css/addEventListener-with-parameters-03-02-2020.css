@@ -1,0 +1,23 @@
+
+
+
+.divContainers {
+	width: 100px;
+	height: 100px;
+	margin: 5px;
+	border: 3px solid black;
+	display: inline-block;
+}
+
+#a7 {
+	width: 200px;
+	height: 200px;
+	margin: 5px;
+	border: 3px solid black;
+	display: inline-block;
+	border-radius:0%;
+	transition: border-radius 2s;
+}
+
+
+
