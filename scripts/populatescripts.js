@@ -25,12 +25,12 @@ document.body.insertBefore(p, document.body.firstChild);
 
 function populateContent() {
 	/*Manage navigation paths depends of from what page*/
-	var path = window.location.pathname;
+	/*var path = window.location.pathname;
 	var page = path.split("/").pop();
 	console.log(page);
 	var prefix="";
 	var prefix2 = "html/";
-	if(page != "index.html"){prefix = "../"; prefix2 = "";}
+	if(page != "index.html"){prefix = "../"; prefix2 = "";}*/
 	
 	/*Create navigation elements*/
 	var navElement;
@@ -41,15 +41,15 @@ function populateContent() {
 	pElement = document.createElement('p');			//Create P tag
 	aElementHome = document.createElement('a');		//Create A tag
 	aElementHome.className="nav";
-	aElementHome.href = prefix + "index.html";		//Assign to A tag href property
+	aElementHome.href = "index.html";		//Assign to A tag href property
 	
 	aElementJavaScript = document.createElement('a');	
 	aElementJavaScript.className="nav";
-	aElementJavaScript.href = prefix2 + "javascript.html";
+	aElementJavaScript.href =  "javascript.html";
 	
 	aElementCSS = document.createElement('a');	
 	aElementCSS.className="nav";
-	aElementCSS.href = prefix2 + "css.html";
+	aElementCSS.href =  "css.html";
 	
 	var textElementHome = document.createTextNode('Home');	//Give to A tag text content
 	var textElementJavaScript = document.createTextNode('Java Script');
