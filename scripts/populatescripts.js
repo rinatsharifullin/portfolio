@@ -27,6 +27,7 @@ function populateContent() {
 	/*Manage navigation paths depends of from what page*/
 	var path = window.location.pathname;
 	var page = path.split("/").pop();
+	console.log(page);
 	var prefix="";
 	var prefix2 = "html/";
 	if(page != "index.html"){prefix = "../"; prefix2 = "";}
