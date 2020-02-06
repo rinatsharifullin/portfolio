@@ -1,0 +1,19 @@
+
+section{
+	max-width:500px;
+	margin:auto;
+}
+/*Control section Styling*/
+#control{
+	width:290px;
+	text-align:right;
+	margin:auto;
+}
+/*Squares styling*/
+
+input{
+	margin:10px;
+}
+h1{
+	text-align:center;
+}

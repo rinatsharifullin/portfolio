@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<script src="../../scripts/populatescriptsfromexercises.js"></script>
+	<html lang="en">
+
+
+		<head>
+		
+			<!--
+				1. exercise for 29th Jan 2020
+				=============================
+				This morning we will practice:
+				 a) Function Design Recipe
+				 b) HTML Forms
+				 c) getElementsByClassName()
+				File:  0021-click-for-colour.html
+				Time:  120 minutes allowance
+				Level: moderate (take a 'one step at a time' approach)
+				Please review:
+				 a) 0000-0027-form-field-onclick
+				 b) 0000-0033-getElementsBy . _ . innerText . _ . innerHTML.zip
+				Task Description:
+				Build a page that that allows selection of the number for a div and a colour. 
+				On clicking a button, the background colour of the div with the selected number
+				will change to the selected colour. At the same time on each click, the colour
+				of each div will be logged in the console.
+				Suggested Build Steps:
+				 1. Build a HTML page, to include a HTML form and 24 small div elements. Give
+					each div a number (1 - 24) and display this number close to, or inside,
+					the div.
+					
+				 2. Add an onclick event to the forms button, e.g.:
+					<button onclick="changeColour(); return false;">Change colour</button>
+					Ensure to add "return false;" to prevent a page load ('refesh').
+					
+				 3. Create a flowchart or pseudocode to plan your code instructions.
+				 4. Design your changeColour() function. Remember the function will:
+					a) Collect the form values for div number and colour
+					b) Change the colour of the selected div
+					c) Collect all the 24 div colours and create a log with these colours.
+				 5. Upload the completed files and folder as a zipped file to your GitHub repository.
+					Ensure that all uploaded file names for this exercise start with '0021-'
+			-->
+		
+			<!--Done by Rinat Sharifullun, 2020-->
+			<meta charset="UTF-8">
+			<!--Title for your webpage-->
+			<title>0021-click-for-colour</title>
+			<link rel="stylesheet" type="text/css" href="css/myStyle.css">
+			<script src="scripts/scripts.js"></script>
+		</head>
+
+		<body>
+			<!--Control section-->
+			<div id="control">
+				<h1>Control</h1>
+				<form action="">
+					Select your favorite color: <input type="color" name="favcolor" id="favcolor" value="#ff0000">
+					Quantity (between 1 and 24): <input type="number" name="quantity" id="quantity" min="1" max="24" value="1">
+					<button id="myButton" onclick="return false">Process</button>
+				</form>
+			</div>
+			
+			<!--All aquares and numbers-->
+			<h1>Squares</h1>
+			<section id="MySec">
+
+			</section>
+			
+
+		</body>
+
+</html>
