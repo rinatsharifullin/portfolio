@@ -30,7 +30,7 @@ section{
 	
 }
 img{
-	float:none;
+	float:right;
 	box-shadow: 2px 2px 5px rgba(32,33,36,0.28);
 }
 #examplelink{

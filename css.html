@@ -19,11 +19,149 @@
 			<section>
 				<h2>Redesing website for mobile and tablets.</h2>
 				<p>05 February 2020</p>
-				<p><img src="images/tozai.png" alt="tozai.png" width="555px" height="211px"></img>
-				This excersize gives us information about anonimus classes, recognize event from paticular tag of same class.
-				Pressing any of squares change colour and shape of rightmost big squre. Javascript reads background-color of pressed squre and changed to same colour of big squre. 
-				Also shape of big squre changing each time we click. Was using transition in CSS file to smoth changes from squre to circle and back.</p>
+				<p><img src="images/tozai.png" alt="tozai.png" ></img>
+				This excercise intendent to gives us feeling how to do styling for different resolutions of the screen. Tablet with sizes 768px or horizontally 1020px. Next will be mobile devices with size 480px.
+				</p>
+				<h2>CSS code.</h2>
+				<pre>
+	body{
+		background-color:rgb(250,250,240);
+		margin:0;
+		
+	}
+	#wholeBody{
+		width:980px;
+		margin:auto;
+		background-image:url("../images/basin_bg.jpg");
+		background-repeat:no-repeat;
+		background-color:rgb(179,195,185);
+		
+	}
+	h1{
+		font-size:5em;
+		text-align:center;
+		margin:0;
+	}
+	h2, h3{
+		padding:0 10px;
+	}
+	p{
+		padding:0 10px;
+
+	}
+	ul{
+		text-align:center;
+		padding:0;
+	}
+	li{
+		display:inline-block;
+		
+	}
+	li a{
+		text-decoration:none;
+		background-color:black;
+		color:white;
+		padding:15px 60px;
+		border-radius:5px;
+	}
+	#myImage{
+		background-image:url("../images/chef.jpg");
+		background-repeat:no-repeat;
+		width:680px;
+		height:127px;
+		border-radius:10px 10px 0 0;
+	}
+	article{
+		float:left;
+		width:680px;
+		margin:15px;
+		background-color:white;
+		border-radius:10px 10px 10px 10px;
+
+	}
+	#rightimg{
+		float:right;
+		box-shadow:3px 3px 5px rgb(179,195,185);
+	}
+	#leftimg{
+		margin:0 10px 0 0;
+		float:left;
+		box-shadow:3px 3px 5px rgb(179,195,185);
+	}
+
+	aside{
+		float:right;
+		width:240px;
+		margin:15px 18px 0 0;
+		background-color:white;
+		border-radius:10px 10px 10px 10px;
+	}
+	#myImageAside{
+		background-image:url("../images/sake.jpg");
+		background-repeat:no-repeat;
+		width:244px;
+		height:144px;
+		border-radius:0 0 10px 10px;
+	}
+	footer{
+		clear:both;
+		background-color:black;
+		color:white;
+		padding:1px 5px;
+	}
+	footer p{
+		
+	}
+
+
+	@media only screen and (max-width:768px){
+
+		#wholeBody{
+			width:768px;
+			background-image:url("../images/basin_bg_tab.jpg");
+		}
+
+		li a{
+			padding:15px 40px;
+		}
+
+
+
+
+
+		aside{
+			
+			width:680px;
+			margin:15px 70px 0 0;
+			
+
+		}
+		aside p{
+			float:right;
+		}
+		#myImageAside{
+			text-align:right;
+			background-image:url("../images/sake_tab.jpg");
+			background-repeat:no-repeat;
+			width:300px;
+			height:488px;
+			border-radius:0 0 10px 10px;
+		}
+		footer{
+			clear:both;
+			background-color:black;
+			color:white;
+			padding:1px 5px;
+		}
+		footer p{
+			
+		}
+		
+
+		
+	}
 				
+				</pre>
 				<a id ="examplelink" href="cssexercises/tozai/index.html">Try example</a>
 			</section>
 
