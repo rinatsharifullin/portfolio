@@ -252,7 +252,94 @@
 			</pre>
 				<a href="jsexercises/addEventListener/index.html">See in action</a>
 			</section>
+<!-------------------------------------------->
+			<section>
+				<h2>Form data request and process.</h2>
+				<p>20 January 2020</p>
+				<p><img src="images/form-field-onclick.png" alt="form-field-onclick.png"></img>
+					We learn how to reques data from HTML form and how to process data from form.
+				</p>
+				<h2>JavaScript code.</h2>
+				<pre>
+	console.log('Script file loaded.');
 
+	document.addEventListener("DOMContentLoaded", function(){
+
+	  console.log('HTML file loaded and parsed.');
+
+	  /* *** FOR OUR UPCOMING EXERCISES, PLEASE
+			 MAKE USE OF THE AREA BELOW ONLY! *** */
+
+
+	  /* *** FOR OUR UPCOMING EXERCISES, PLEASE
+			 MAKE USE OF THE AREA ABOVE ONLY! *** */
+	  
+	});
+
+	// For this exercise, add an extra field to indicate if customer requires cream.
+
+
+	function processOrder() {
+		var customer = document.getElementById('customer').value;
+		var ball1 = document.getElementById('ball1').value;
+		var ball2 = document.getElementById('ball2').value;
+		var ball3 = document.getElementById('ball3').value;
+		var ball4 = document.getElementById('ball4').value;
+		var ball5 = document.getElementById('ball5').value;
+		var creamOrNot = document.getElementById('cream').value;
+		
+		alert(customer + ' ordered ' + ball1 + ', ' + ball2 + ', ' + ball3 + ', ' + ball4 + ', ' + ball5 + ', ' + creamOrNot);
+		
+	}				
+	
+			</pre>
+				<a href="jsexercises/form-field-onclick/index.html">See in action</a>
+			</section>
+<!-------------------------------------------->
+			<section>
+				<h2>Red Zone Fun Exercise</h2>
+				<p>20 January 2020</p>
+				<p><img src="images/redzonefunexcersize.png" alt="redzonefunexcersize.png"></img>
+					Learned how to style HTML page by Java Script code, get elements by iD and respond by clicking on tags.
+				</p>
+				<h2>JavaScript code.</h2>
+				<pre>
+	console.log('Script file loaded.');
+
+	document.addEventListener("DOMContentLoaded", function(){
+
+	  console.log('HTML file loaded and parsed.');
+
+	  /* *** FOR OUR UPCOMING EXERCISES, PLEASE
+			 MAKE USE THE AREA BELOW ONLY! *** */
+
+	  /* *** FOR OUR UPCOMING EXERCISES, PLEASE
+			 MAKE USE THE AREA ABOVE ONLY! *** */
+	  
+	});
+
+	 function restore(){
+		var myColor = document.getElementById('circle');
+		myColor.style.backgroundColor = 'red';
+		var text = document.getElementById('myText');
+		text.innerText = 'Red Zone';
+		text.style.color = 'red';
+		var text2 = document.getElementById('myText2');
+		text2.style.visibility = 'hidden';
+	 } 
+	function changeColor(){
+		var myColor = document.getElementById('circle');
+		myColor.style.backgroundColor = 'Black';
+		var text = document.getElementById('myText');
+		text.innerText = 'Black Zone.';
+		text.style.color = 'black';
+		var text2 = document.getElementById('myText2');
+		text2.style.visibility = 'visible';
+	}				
+	
+			</pre>
+				<a href="jsexercises/redzonefunexcersize/index.html">See in action</a>
+			</section>
 		</body>
 
 </html>
