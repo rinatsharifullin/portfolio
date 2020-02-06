@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', function(){
 	var aElement;
 	var textElement;
 	//var myName=["R","i","n","a","t"," ","S","h","a","r","i","f","u","l","l","i","n"];
-	var myName=["H","i",","," ","I","'","m"," ","R","i","n","a","t","."," ","I"," ","F","r","o","n","t"," ","E","n","d"," ","W","e","b"," ","D","e","v","e","l","o","p","e","r","."];
-	/*Hi, I'm Rinat. I Front End Web Developer.*/
+	var myName=["H","i",","," ","I","'","m"," ","R","i","n","a","t",","," ","F","r","o","n","t"," ","E","n","d"," ","W","e","b"," ","D","e","v","e","l","o","p","e","r","."];
+	
 	var myTimer;
 
 	pElement = document.createElement('p');			//Create P tag
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		
 		
 		},100);
-	
+		
 	
 	
 	
