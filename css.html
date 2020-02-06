@@ -7,7 +7,7 @@
 			<!--Done by Rinat Sharifullun, 2020-->
 			<meta charset="UTF-8">
 			<!--Title for your webpage-->
-			<title></title>
+			<title>CSS exercises</title>
 			<link rel="stylesheet" type="text/css" href="css/style.css">
 			<!--<style type="text/css"></style>-->
 			<script src="scripts/populatescripts.js"></script>
@@ -109,10 +109,6 @@
 		color:white;
 		padding:1px 5px;
 	}
-	footer p{
-		
-	}
-
 
 	@media only screen and (max-width:768px){
 
@@ -124,45 +120,72 @@
 		li a{
 			padding:15px 40px;
 		}
-
-
-
-
-
+		article{
+			float:none;
+			margin:auto;
+		}
 		aside{
-			
+			float:none;
 			width:680px;
-			margin:15px 70px 0 0;
-			
-
+			margin:15px auto;
+			position:relative;
 		}
 		aside p{
-			float:right;
+			width:296px;
 		}
 		#myImageAside{
-			text-align:right;
+			position:absolute;
+			right:0px;
+			bottom:0px;
 			background-image:url("../images/sake_tab.jpg");
 			background-repeat:no-repeat;
 			width:300px;
 			height:488px;
-			border-radius:0 0 10px 10px;
+			border-radius:0 0 10px 0;
 		}
-		footer{
-			clear:both;
-			background-color:black;
-			color:white;
-			padding:1px 5px;
-		}
-		footer p{
-			
-		}
-		
 
-		
 	}
-				
+
+	@media only screen and (max-width:480px){
+
+		#wholeBody{
+			width:480px;
+			background-image:url("../images/basin_bg_phone.jpg");
+		}
+		ul{
+			display:none;
+		}
+
+		#myImage{
+			background-image:url("../images/chef.jpg");
+			width:460px;
+			height:127px;
+		}
+		#rightimg{
+			float:none;
+			margin:15px;
+		}
+		#leftimg{
+			margin:15px;
+			float:none;
+		}
+		article{
+			float:none;
+			margin:auto;
+			width:460px;
+		}
+		aside{
+			width:460px;
+		}
+
+		#myImageAside{
+			overflow:hidden;
+			width:120px;
+		}
+
+	}				
 				</pre>
-				<a id ="examplelink" href="cssexercises/tozai/index.html">Try example</a>
+				<a id ="examplelink" href="cssexercises/tozai/index.html">See webpage</a>
 			</section>
 
 		</body>

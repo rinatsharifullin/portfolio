@@ -7,7 +7,7 @@
 			<!--Done by Rinat Sharifullun, 2020-->
 			<meta charset="UTF-8">
 			<!--Title for your webpage-->
-			<title></title>
+			<title>JavaScript exercises</title>
 			<link rel="stylesheet" type="text/css" href="css/style.css">
 			<!--<style type="text/css"></style>-->
 			<script src="scripts/populatescripts.js"></script>
@@ -20,48 +20,49 @@
 				<h2>Add Event Listener with parameters</h2>
 				<p>03 February 2020</p>
 				<p><img src="images/addEventListener-with-parameters-03-02-2020.png" alt="addEventListener-with-parameters-03-02-2020" width="777px" height="187px"></img>
-				This excersize gives us information about anonimus classes, recognize event from paticular tag of same class.
+				This excercise gives us information about anonimus classes, recognize event from paticular tag of same class.
 				Pressing any of squares change colour and shape of rightmost big squre. Javascript reads background-color of pressed squre and changed to same colour of big squre. 
 				Also shape of big squre changing each time we click. Was using transition in CSS file to smoth changes from squre to circle and back.</p>
+				<h2>JavaScript code.</h2>
 				<pre>
-					document.addEventListener('DOMContentLoaded', function(){
-						colourMe();
-					  console.log('HTML file loaded and parsed.');
+	document.addEventListener('DOMContentLoaded', function(){
+		colourMe();
+	  console.log('HTML file loaded and parsed.');
 
-					  addMyEventListeners();
-					  
-					});
+	  addMyEventListeners();
+	  
+	});
 
-					/* Keep this function declaration for future projects. Don't need to remove it, 
-					   even if it doesn't do anything for this exercise.  */
-					function addMyEventListeners(){
-					  var kubik = document.getElementsByClassName('divContainers');
-					  for(var q=0; q&lt;kubik.length; q++){
-						  kubik[q].addEventListener('click',function(){
-							  divClicked(this);
-						  } )
-					  }
+	/* Keep this function declaration for future projects. Don't need to remove it, 
+	   even if it doesn't do anything for this exercise.  */
+	function addMyEventListeners(){
+	  var kubik = document.getElementsByClassName('divContainers');
+	  for(var q=0; q&lt;kubik.length; q++){
+		  kubik[q].addEventListener('click',function(){
+			  divClicked(this);
+		  } )
+	  }
 
-					}
+	}
 
-					function divClicked(divNo) {
-						var budy = document.getElementById('a7');
-						budy.style.backgroundColor = divNo.style.backgroundColor;
-						if(budy.style.borderRadius == '50%'){
-							budy.style.borderRadius = '0%';
-						}else{budy.style.borderRadius = '50%';}
-						
-					}
+	function divClicked(divNo) {
+		var budy = document.getElementById('a7');
+		budy.style.backgroundColor = divNo.style.backgroundColor;
+		if(budy.style.borderRadius == '50%'){
+			budy.style.borderRadius = '0%';
+		}else{budy.style.borderRadius = '50%';}
+		
+	}
 
-					function colourMe(){
-						var kubik = document.getElementsByClassName('divContainers');
-						kubik[0].style.backgroundColor="red";
-						kubik[1].style.backgroundColor="blue";
-						kubik[2].style.backgroundColor="maroon";
-						kubik[3].style.backgroundColor="black";
-						kubik[4].style.backgroundColor="aqua";
-						kubik[5].style.backgroundColor="yellow";
-					}
+	function colourMe(){
+		var kubik = document.getElementsByClassName('divContainers');
+		kubik[0].style.backgroundColor="red";
+		kubik[1].style.backgroundColor="blue";
+		kubik[2].style.backgroundColor="maroon";
+		kubik[3].style.backgroundColor="black";
+		kubik[4].style.backgroundColor="aqua";
+		kubik[5].style.backgroundColor="yellow";
+	}
 				</pre>
 				<a href="addEventListener-with-parameters-03-02-2020.html">Try example</a>
 			</section>
