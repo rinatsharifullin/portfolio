@@ -66,6 +66,60 @@
 				</pre>
 				<a href="addEventListener-with-parameters-03-02-2020.html">Try example</a>
 			</section>
+<!-------------------------------------------->
+			<section>
+				<h2>Button controll of image Z-Index</h2>
+				<p>06 February 2020</p>
+				<p><img src="images/zindex.png" alt="zindex.png"></img>
+					We have got next task:
+					Create 4 divs and place one background image into each other.
+					Style divs that they are on top of each other, and assign z-index.
+					Create 2 buttons, each button will move one image to top.
+				</p>
+				<h2>JavaScript code.</h2>
+				<pre>
+	document.addEventListener('DOMContentLoaded', function(){
+	
+	  addMyEventListeners();
+	  
+	});
+
+	/* Keep this function declaration for future projects. Don't need to remove it, 
+	   even if it doesn't do anything for this exercise.  */
+	function addMyEventListeners(){
+	  var pic1 = document.getElementById('a1');
+	  var pic2 = document.getElementById('a2');
+	  var pic3 = document.getElementById('a3');
+	  var pic4 = document.getElementById('a4');
+
+	  document.getElementById('p1').addEventListener('click', function(){
+		  pic1.style.zIndex='888';
+		  pic2.style.zIndex='3';
+		  pic3.style.zIndex='2';
+		  pic4.style.zIndex='1';
+		  })
+		document.getElementById('p2').addEventListener('click', function(){
+		  pic1.style.zIndex='3';
+		  pic2.style.zIndex='888';
+		  pic3.style.zIndex='2';
+		  pic4.style.zIndex='1';
+		  })
+		document.getElementById('p3').addEventListener('click', function(){
+		  pic1.style.zIndex='3';
+		  pic2.style.zIndex='2';
+		  pic3.style.zIndex='888';
+		  pic4.style.zIndex='1';
+		  })
+		document.getElementById('p4').addEventListener('click', function(){
+		  pic1.style.zIndex='3';
+		  pic2.style.zIndex='2';
+		  pic3.style.zIndex='1';
+		  pic4.style.zIndex='888';
+		  })
+	}
+				</pre>
+				<a href="jsexercises/ControlZIndexByJS/index.html">Try example</a>
+			</section>
 
 		</body>
 
