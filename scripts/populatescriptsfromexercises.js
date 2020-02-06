@@ -85,6 +85,7 @@ function populateContent() {
 		aTags[position].style.padding = "7px 12px";
 		aTags[position].style.borderRadius = "15px";
 		aTags[position].style.textDecoration = "none";
+		aTags[position].style.backgroundColor = 'white';
 		
 		aTags[position].onmouseover = function(){
 			this.style.boxShadow = "0 1px 6px 0 rgba(32,33,36,0.28)";
