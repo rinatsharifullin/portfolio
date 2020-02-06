@@ -5,14 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tozai Hotel: Dining</title>
 <link href="css/style.css" rel="stylesheet" type="text/css">
-<script src="../../scripts/populatescriptsfromexercises.js"></script>
+
 </head>
 
 <body>
 
 <div id=wholeBody>
-    <h1>Tozai Hotel</h1>
 
+	<div id="mobileicon">
+		&#9776;
+	</div>
+    <h1>Tozai Hotel</h1>
+	<nav>
   <ul>
     <li><a href="#">Home</a></li>
     <li><a href="#">Guest Rooms</a></li>
@@ -20,6 +24,7 @@
     <li><a href="#">Garden</a></li>
     <li><a href="#">Reservations</a></li>
   </ul>
+  </nav>
 
 
 <article>
@@ -49,6 +54,11 @@
 </footer>
 </div>
 
-
+<script src="jquery.js"></script>
+<script>
+	$("#mobileicon").click(function() {
+		$("nav").slideToggle();  
+	});
+</script>
 </body>
 </html>

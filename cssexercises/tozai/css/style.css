@@ -126,23 +126,29 @@ footer{
 		width:480px;
 		background-image:url("../images/basin_bg_phone.jpg");
 	}
-	ul{
-		display:none;
-	}
+	
 
 	#myImage{
 		background-image:url("../images/chef.jpg");
 		width:460px;
 		height:127px;
 	}
-	#rightimg{
+	nav{
+		display:none;
+	}
+
+	li a{
+		width:460px;
+		padding:5px;
+		margin:3px 0;
+		display:block;
+	}
+	
+	#rightimg, #leftimg{
 		float:none;
 		margin:15px;
 	}
-	#leftimg{
-		margin:15px;
-		float:none;
-	}
+	
 	article{
 		float:none;
 		margin:auto;
@@ -155,6 +161,22 @@ footer{
 	#myImageAside{
 		overflow:hidden;
 		width:120px;
+	}
+	
+	
+	
+	
+	#mobileicon{
+		display:block;
+		width:35px;
+		height:39px;
+		float:right;
+		margin-right:10px;
+		margin-top:10px;
+		font-size:2.5em;
+	}
+	#mobileicon:hover{
+		cursor:pointer;
 	}
 
 }
