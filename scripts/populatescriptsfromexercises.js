@@ -51,18 +51,39 @@ function populateContent() {
 	aElementCSS.className="nav";
 	aElementCSS.href =  "../../css.html";
 	
+	aElementBlog = document.createElement('a');	
+	aElementBlog.className="nav";
+	aElementBlog.href =  "../../blog.html";
+	
+	aElementAbout = document.createElement('a');	
+	aElementAbout.className="nav";
+	aElementAbout.href =  "../../about.html";
+	
+	aElementContact = document.createElement('a');	
+	aElementContact.className="nav";
+	aElementContact.href =  "../../contact.html";
+	
 	var textElementHome = document.createTextNode('Home');	//Give to A tag text content
-	var textElementJavaScript = document.createTextNode('Java Script');
-	var textElementCSS = document.createTextNode('CSS');
+	var textElementJavaScript = document.createTextNode('Java Script Exercises');
+	var textElementCSS = document.createTextNode('CSS Exercises');
+	var textElementBlog = document.createTextNode('Blog');
+	var textElementAbout = document.createTextNode('About');
+	var textElementContact = document.createTextNode('Contact');
 
 	
 	aElementHome.appendChild(textElementHome);	//Append text content to A tag
 	aElementJavaScript.appendChild(textElementJavaScript);	
 	aElementCSS.appendChild(textElementCSS);
+	aElementBlog.appendChild(textElementBlog);
+	aElementAbout.appendChild(textElementAbout);
+	aElementContact.appendChild(textElementContact);
 	
 	pElement.appendChild(aElementHome);	//Append A tag to P tag
 	pElement.appendChild(aElementJavaScript);
 	pElement.appendChild(aElementCSS);
+	pElement.appendChild(aElementBlog);
+	pElement.appendChild(aElementAbout);;
+	pElement.appendChild(aElementContact);
 	
 	navElement.appendChild(pElement);
 	document.body.insertBefore(navElement, document.body.firstChild);
@@ -86,20 +107,23 @@ function populateContent() {
 	for(var position = 0; position<aTags.length; position++){
 		aTags[position].style.border = "thin solid #dfe1e5";
 		aTags[position].style.padding = "7px 12px";
-		aTags[position].style.borderRadius = "15px";
+		aTags[position].style.borderRadius = "5px";
 		aTags[position].style.textDecoration = "none";
 		aTags[position].style.backgroundColor = 'white';
+		aTags[position].style.color = 'gray';
 		
 		aTags[position].onmouseover = function(){
 			this.style.boxShadow = "0 1px 6px 0 rgba(32,33,36,0.28)";
 			this.style.textDecoration = "underline";
+			this.style.color = "black";
 			}
 		aTags[position].onmouseout = function(){
 			this.style.boxShadow = "none";
 			this.style.textDecoration = "none";
 			this.style.border = "thin solid #dfe1e5";
 			this.style.padding = "7px 12px";
-			this.style.borderRadius = "15px";
+			this.style.borderRadius = "5px";
+			this.style.color = "gray";
 			}
 	}
 
