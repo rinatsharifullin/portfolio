@@ -109,6 +109,9 @@ function populateContent() {
 		aTags[position].style.borderRadius = "5px";
 		aTags[position].style.textDecoration = "none";
 		aTags[position].style.color = 'gray';
+		aTags[position].style.display = 'inline-block';
+		aTags[position].style.width = '150px';
+		aTags[position].style.textAlign = 'center';
 		
 		aTags[position].onmouseover = function(){
 			this.style.boxShadow = "0 1px 6px 0 rgba(32,33,36,0.28)";
