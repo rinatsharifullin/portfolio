@@ -93,7 +93,7 @@ function populateContent() {
 	var myBody = document.body;
 	myBody.style.margin = 'auto';
 	myBody.style.padding = '0';
-	myBody.style.width = '1080px';
+	myBody.style.maxWidth = '1080px';
 	myBody.style.fontFamily = 'font-family: Tahoma, Verdana, Geneva, sans-serif;';
 	myBody.style.fontWeight = 'bold';
 	

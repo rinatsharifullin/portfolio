@@ -93,9 +93,9 @@ function populateContent() {
 	var myBody = document.body;
 	myBody.style.margin = 'auto';
 	myBody.style.padding = '0';
-	myBody.style.width = '1080px';
+	myBody.style.maxWidth = '1080px';
 	myBody.style.fontFamily = 'font-family: Tahoma, Verdana, Geneva, sans-serif;';
-	myBody.style.fontWeight = 'bold';
+	
 	
 	/*Style nav*/
 	var myNav = document.getElementById("myNav");
@@ -107,6 +107,7 @@ function populateContent() {
 		aTags[position].style.border = "thin solid #dfe1e5";
 		aTags[position].style.padding = "7px 12px";
 		aTags[position].style.borderRadius = "5px";
+		aTags[position].style.backgroundColor = 'white';
 		aTags[position].style.textDecoration = "none";
 		aTags[position].style.color = 'gray';
 		aTags[position].style.display = 'inline-block';

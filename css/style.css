@@ -38,6 +38,9 @@ section p:first-line {text-indent:40px;}
 img{
 	float:right;
 	box-shadow: 2px 2px 5px rgba(32,33,36,0.28);
+	max-width:100%;
+	height: auto;
+
 }
 #examplelink{
 	float:none;
@@ -49,6 +52,11 @@ img{
 	
 }
 
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-align: justify;
+}
 
 
 input[type=text], select, textarea {
@@ -76,3 +84,21 @@ input[type=text], select, textarea {
 	  color:white;
 	}
 
+.path2 {
+  stroke-dasharray: 750;
+  stroke-dashoffset: 750;
+  animation: dash 3s linear  forwards ;
+  
+  stroke-opacity:1;
+  stroke-width:1;
+  fill:none;
+  stroke:#f40000;
+
+}
+
+@keyframes dash {
+  
+  to {
+    stroke-dashoffset: 0;
+  }
+}
