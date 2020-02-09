@@ -95,7 +95,7 @@ function populateContent() {
 	myBody.style.padding = '0';
 	myBody.style.maxWidth = '1080px';
 	myBody.style.fontFamily = 'font-family: Tahoma, Verdana, Geneva, sans-serif;';
-	
+	myBody.style.fontWeight = 'bold';
 	
 	
 	/*Style nav*/

@@ -18,9 +18,79 @@
 			<h1>CSS Exercises.</h1>
 <!-------------------------------------------->			
 			<section>
+				<h2>Hand writing animations.</h2>
+				<p class="date">08 February 2020</p>
+				<p><img src="images/handwriting.jpg" alt="handwriting.jpg" width="555px" height="312px" ></img>
+				Hand writing animations created with help of InkScape software.
+				</p>
+				<h2>CSS Code</h2>
+				<pre>
+	.path2 {
+	  stroke-dasharray: 750;
+	  stroke-dashoffset: 750;
+	  animation: dash 3s linear  forwards ;
+	  
+	  stroke-opacity:1;
+	  stroke-width:1;
+	  fill:none;
+	  stroke:#f40000;
+
+	}
+
+	@keyframes dash {
+	  
+	  to {
+		stroke-dashoffset: 0;
+	  }
+	}			
+				</pre>
+				<a id ="examplelink" href="cssexercises/handwriting/index.html">See webpage</a>
+			</section>
+<!-------------------------------------------->			
+			<section>
+				<h2>Text typing animation</h2>
+				<p class="date">07 February 2020</p>
+				<p><img src="images/texttype.jpg" alt="texttype.jpg" width="777px" height="141px" ></img>
+				This text typing animation was purely develop on JavaScript. From creating p tag and positioning between body tags, to looping through array of letters and displaying one by one with help of setInterval function.
+				</p>
+				<h2>Java Script Code</h2>
+				<pre>
+	document.addEventListener('DOMContentLoaded', function(){
+		/*Create navigation elements*/
+		var navElement;
+		var pElement;
+		var aElement;
+		var textElement;
+		//var myName=["R","i","n","a","t"," ","S","h","a","r","i","f","u","l","l","i","n"];
+		var myName=["H","i",","," ","I","'","m"," ","R","i","n","a","t","."," ","F","r","o","n","t"," ","E","n","d"," ","W","e","b"," ","D","e","v","e","l","o","p","e","r","."];
+		
+		var myTimer;
+
+		pElement = document.createElement('p');			//Create P tag
+		pElement.className="rinatsharifullin";
+		pElement.style.fontSize = '5em';
+		pElement.style.textAlign = 'center';
+		document.body.appendChild(pElement);
+		var q=0;
+		var interval = setInterval(function(){
+			
+				textElement = document.createTextNode(myName[q]);
+				
+				//console.log(textElement);
+				pElement.appendChild(textElement);
+				
+				q++;
+				if(!myName[q]){clearInterval(interval);}
+			},100);
+	});				
+				</pre>
+				<a id ="examplelink" href="cssexercises/texttyping/index.html">See webpage</a>
+			</section>
+<!-------------------------------------------->			
+			<section>
 				<h2>Redesing website for mobile and tablets.</h2>
 				<p class="date">05 February 2020</p>
-				<p><img src="images/tozai.png" alt="tozai.png" ></img>
+				<p><img src="images/tozai.png" alt="tozai.png" width="555px" height="112px" ></img>
 				This excercise intendent to gives us feeling how to do styling for different resolutions of the screen. Tablet with sizes 768px or horizontally 1020px. Next will be mobile devices with size 480px.
 				</p>
 				<h2>CSS code.</h2>
@@ -192,7 +262,7 @@
 			<section>
 				<h2>Redesing website for mobile and tablets.</h2>
 				<p class="date">04 February 2020</p>
-				<p><img src="images/aquarium.png" alt="aquarium.png" ></img>
+				<p><img src="images/aquarium.png" alt="aquarium.png" width="460px" height="325px" ></img>
 				Here we learned of "transforma" in CSS like transform-origin, rotate, translate, skew and scale.
 				</p>
 				<h2>CSS code.</h2>

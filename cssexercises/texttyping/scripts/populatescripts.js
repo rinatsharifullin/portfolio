@@ -41,27 +41,27 @@ function populateContent() {
 	pElement = document.createElement('p');			//Create P tag
 	aElementHome = document.createElement('a');		//Create A tag
 	aElementHome.className="nav";
-	aElementHome.href = "../../index.html";		//Assign to A tag href property
+	aElementHome.href = "index.html";		//Assign to A tag href property
 	
 	aElementJavaScript = document.createElement('a');	
 	aElementJavaScript.className="nav";
-	aElementJavaScript.href =  "../../javascript.html";
+	aElementJavaScript.href =  "javascript.html";
 	
 	aElementCSS = document.createElement('a');	
 	aElementCSS.className="nav";
-	aElementCSS.href =  "../../css.html";
+	aElementCSS.href =  "css.html";
 	
 	aElementBlog = document.createElement('a');	
 	aElementBlog.className="nav";
-	aElementBlog.href =  "../../blog.html";
+	aElementBlog.href =  "blog.html";
 	
 	aElementAbout = document.createElement('a');	
 	aElementAbout.className="nav";
-	aElementAbout.href =  "../../about.html";
+	aElementAbout.href =  "about.html";
 	
 	aElementContact = document.createElement('a');	
 	aElementContact.className="nav";
-	aElementContact.href =  "../../contact.html";
+	aElementContact.href =  "contact.html";
 	
 	var textElementHome = document.createTextNode('Home');	//Give to A tag text content
 	var textElementJavaScript = document.createTextNode('Java Script Exercises');
@@ -82,7 +82,7 @@ function populateContent() {
 	pElement.appendChild(aElementJavaScript);
 	pElement.appendChild(aElementCSS);
 	pElement.appendChild(aElementBlog);
-	pElement.appendChild(aElementAbout);;
+	pElement.appendChild(aElementAbout);
 	pElement.appendChild(aElementContact);
 	
 	navElement.appendChild(pElement);
@@ -97,7 +97,6 @@ function populateContent() {
 	myBody.style.fontFamily = 'font-family: Tahoma, Verdana, Geneva, sans-serif;';
 	
 	
-	
 	/*Style nav*/
 	var myNav = document.getElementById("myNav");
 	myNav.style.textAlign = 'right';
@@ -108,8 +107,8 @@ function populateContent() {
 		aTags[position].style.border = "thin solid #dfe1e5";
 		aTags[position].style.padding = "7px 12px";
 		aTags[position].style.borderRadius = "5px";
-		aTags[position].style.textDecoration = "none";
 		aTags[position].style.backgroundColor = 'white';
+		aTags[position].style.textDecoration = "none";
 		aTags[position].style.color = 'gray';
 		aTags[position].style.display = 'inline-block';
 		aTags[position].style.width = '150px';
