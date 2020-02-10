@@ -113,6 +113,7 @@ function populateContent() {
 		aTags[position].style.display = 'inline-block';
 		aTags[position].style.width = '150px';
 		aTags[position].style.textAlign = 'center';
+		aTags[position].style.fontSize = '0.9vw';
 		
 		aTags[position].onmouseover = function(){
 			this.style.boxShadow = "0 1px 6px 0 rgba(32,33,36,0.28)";

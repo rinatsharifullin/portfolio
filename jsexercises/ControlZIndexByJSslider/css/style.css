@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#a1{
+	background-image:url(../images/anchovies.jpg);
+	
+}
+#a2{
+	background-image:url(../images/bluejellyfish.jpg);
+	/*left:-420px;
+	top:0;*/
+}
+
+#a3{
+	background-image:url(../images/jellyfish1.jpg);
+	/*left:0px;
+	top:-316px;*/
+}
+#a4{
+	background-image:url(../images/seadragon.jpg);
+	/*left:-420px;
+	top:-316px;*/
+}
+.divContainers {
+	position:absolute;
+	width:400px;
+	height:300px;
+	margin: 5px;
+	border: 3px solid black;
+	display: inline-block;
+	background-repeat:no-repeat;
+}
+#buttons{
+	position:absolute;
+	top:330px;
+}
+
+
+
+

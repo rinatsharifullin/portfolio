@@ -114,11 +114,13 @@ function populateContent() {
 		aTags[position].style.display = 'inline-block';
 		aTags[position].style.width = '150px';
 		aTags[position].style.textAlign = 'center';
+		//aTags[position].style.textShadow = '1px 1px 2px lightslategray';
 		
 		aTags[position].onmouseover = function(){
 			this.style.boxShadow = "0 1px 6px 0 rgba(32,33,36,0.28)";
 			this.style.textDecoration = "underline";
 			this.style.color = "black";
+			this.style.textShadow = 'none';
 			}
 		aTags[position].onmouseout = function(){
 			this.style.boxShadow = "none";
