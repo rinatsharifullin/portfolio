@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+	<html lang="en">
+
+
+		<head>
+			<!--Done by Rinat Sharifullun, 2020-->
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<!--Title for your webpage-->
+			<title>JQuery Lightbox and Accordion example</title>
+			<script src="../../scripts/populatescriptsfromexercises.js"></script>
+			<!--<link rel="stylesheet" type="text/css" href="">-->
+			<!--<script src="../../scripts/populatescriptsfromexercises.js"></script>-->
+			<link href="https://fonts.googleapis.com/css?family=Open+Sans|Russo+One&display=swap" rel="stylesheet">
+			<link href="css/lightbox.css" rel="stylesheet" />
+			<script src="js/lightbox-plus-jquery.js"></script>
+			<!-- Place somewhere in the <head> of your document -->
+			<link rel="stylesheet" href="flexslider.css" type="text/css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+			<script src="jquery.flexslider.js"></script>
+			<!-- Place in the <head>, after the three links -->
+			<script type="text/javascript" charset="utf-8">
+			
+			  $(window).load(function() {
+				$('.flexslider').flexslider({
+					animation:'fade',
+					direction:'vertical',
+					slideshowSpeed:'3000',
+					controlNav:'true',
+					directionNav:'true',
+				})
+			  });
+			</script>
+			<script>
+				lightbox.option({
+				  'resizeDuration': 300,
+				  'wrapAround': true,
+				  'fadeDuration':300,
+				})
+			</script>
+		</head>
+
+		<body>
+			<div class="flexslider">
+			  <ul class="slides">
+				<li>
+				  <img src="images/slider-1.jpg" />
+				</li>
+				<li>
+				  <img src="images/slider-2.jpg" />
+				</li>
+				<li>
+				  <img src="images/slider-3.jpg" />
+				</li>
+				<li>
+				  <img src="images/slider-4.jpg" />
+				</li>
+			  </ul>
+			</div>
+
+			<div id="images">
+				<div>
+					<a href="images/image-large-1.jpg"  data-lightbox="roadtrip"><img src="images/thumb1.jpg" alt="thumb1.jpg"/></a>
+					<h3>Multiplication</h3>
+					<p>My Lightboox 1</p>
+				</div>
+				<div>
+					<a href="images/image-large-2.jpg"  data-lightbox="roadtrip"><img src="images/thumb2.jpg" alt="thumb2.jpg"/></a>
+					<h3>Baloon/h3>
+					<p>My Lightboox 2</p>
+				</div>
+				<div>
+					<a href="images/image-large-3.jpg"  data-lightbox="roadtrip"><img src="images/thumb3.jpg" alt="thumb3.jpg"/></a>
+					<h3>Cartoon</h3>
+					<p>My Lightboox 3</p>
+				</div>
+				<div>
+					<a href="images/image-large-4.jpg"  data-lightbox="roadtrip"><img src="images/thumb4.jpg" alt="thumb4.jpg"/></a>
+					<h3>Another Cartoon</h3>
+					<p>My Lightboox 4</p>
+				</div>
+				<div>
+					<a href="images/image-large-5.jpg"  data-lightbox="roadtrip"><img src="images/thumb5.jpg" alt="thumb5.jpg"/></a>
+					<h3>Last Cartoon/h3>
+					<p>My Lightboox 5</p>
+				</div>
+			</div>
+		</body>
+
+</html>

@@ -1,0 +1,71 @@
+HTML
+----------------
+<div class="accordion" id="list1">
+          <!--Accordion-->
+          <a>Design school 2002</a>
+          <div>
+            <p>Aliquam quis dui at orci mattis et vel risus. In odio quam, vestibulum non faucibus sit         
+            amet, posuere id lectus.</p>
+           <p>Aliquam quis dui at orci mattis et vel risus. In odio quam, vestibulum non faucibus sit
+           amet, posuere id lectus.</p>
+          </div>
+
+          <a>Design special school 2005</a>
+          <div>
+            <p>Aliquam quis dui at orci mattis tincidunt et vel risus. In odio quam, vestibulum non  
+           faucibus sit amet, posuere id lectus.</p>
+          </div>
+
+          <a>Design pro school 2009</a>
+          <div>
+          <p>Aliquam quis dui at orci mattis tincidunt et vel risus. In odio quam, vestibulum non
+           faucibus sit amet, posuere id lectus.</p>
+	   </div>
+</div>
+
+
+
+CSS
+------------
+
+/* Styles for the accordion buttons and panels */
+.accordion {
+	width:100%;
+	padding:0;
+}
+.accordion div {
+	background-color:rgba(0, 0, 0, 0.2);
+}
+.accordion p {
+	font-size:13px;
+	margin:0;
+	padding:20px;
+}
+.accordion a {
+	cursor:pointer;
+	display:block;
+	padding:10px 5px 10px 30px;
+	font-size:14px;
+	background-color:rgba(0, 0, 0, 0.4);
+	text-transform:uppercase;
+	color:#fff;
+}
+
+.accordion a:hover {
+	background-color:#f67c05;
+}
+.accordion a.selected {
+	background-color:#f67c05;
+	background-position:0 20px;
+	border-radius:2px;
+}
+
+
+
+JS
+---------------------------
+<script src="js/jquery.accordion.js"></script>
+<script>
+$("#list1").accordion();
+</script>
+

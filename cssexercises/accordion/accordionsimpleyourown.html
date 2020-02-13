@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+	<html lang="en">
+
+
+		<head>
+			<!--Done by Rinat Sharifullun, 2020-->
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<!--Title for your webpage-->
+			<title>JQuery Accordion simple example 3</title>
+			<script src="../../scripts/populatescriptsfromexercises.js"></script>
+			<!--<link rel="stylesheet" type="text/css" href="">-->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+			
+			<style type="text/css">
+				
+			  h1:hover{
+				cursor:pointer;
+			  }
+						
+			</style>
+			<!--<script src="jquery-3.4.1.js"></script>-->
+			
+		</head>
+
+		<body>
+			
+			<h1>Home</h1>
+			<div>
+				<p>About</p>
+				<p>About</p>
+				<p>About</p>
+				<p>About</p>
+				<p>About</p>
+			</div>
+			<div class="accordion" id="list1">
+			 <a>Design school 2002</a>
+			  <div>
+				<p>Aliquam quis dui at orci mattis et vel risus. In odio quam, vestibulum non faucibus sit         
+				amet, posuere id lectus.</p>
+			   <p>Aliquam quis dui at orci mattis et vel risus. In odio quam, vestibulum non faucibus sit
+			   amet, posuere id lectus.</p>
+			  </div>
+			</div>
+			
+			<script src="jquery.accordion.js"></script>
+			<script>
+			  $(document).ready(function($) {
+				$('h1').click(function(){
+
+				  //Expand or collapse this panel
+				  $('div').toggle('slow');
+
+				  //Hide the other panels
+				  $not("div").slideUp('slow');
+					
+				});
+				
+			  });
+			  //$('#list1').accordion();
+			</script>
+		</body>
+
+</html>

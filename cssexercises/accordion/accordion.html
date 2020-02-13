@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+	<html lang="en">
+
+
+		<head>
+			<!--Done by Rinat Sharifullun, 2020-->
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<!--Title for your webpage-->
+			<title>JQuery Accordion simple example 1</title>
+			<script src="../../scripts/populatescriptsfromexercises.js"></script>
+			<!--<link rel="stylesheet" type="text/css" href="">-->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+			
+			<style type="text/css">
+				/* Styles for the accordion buttons and panels */
+				.accordion {
+					width:100%;
+					padding:0;
+				}
+				.accordion div {
+					background-color:rgba(0, 0, 0, 0.2);
+				}
+				.accordion p {
+					font-size:13px;
+					margin:0;
+					padding:20px;
+				}
+				.accordion a {
+					cursor:pointer;
+					display:block;
+					padding:10px 5px 10px 30px;
+					font-size:14px;
+					background-color:rgba(0, 0, 0, 0.4);
+					text-transform:uppercase;
+					color:#fff;
+				}
+
+				.accordion a:hover {
+					background-color:#f67c05;
+				}
+				.accordion a.selected {
+					background-color:#f67c05;
+					background-position:0 20px;
+					border-radius:2px;
+				}
+			
+			</style>
+			<!--<script src="jquery-3.4.1.js"></script>-->
+			
+		</head>
+
+		<body>
+
+			<div class="accordion" id="list1">
+			  <!--Accordion-->
+			  <a>Design school 2002</a>
+			  <div>
+				<p>Aliquam quis dui at orci mattis et vel risus. In odio quam, vestibulum non faucibus sit         
+				amet, posuere id lectus.</p>
+			   <p>Aliquam quis dui at orci mattis et vel risus. In odio quam, vestibulum non faucibus sit
+			   amet, posuere id lectus.</p>
+			  </div>
+
+			  <a>Design special school 2005</a>
+			  <div>
+				<p>Aliquam quis dui at orci mattis tincidunt et vel risus. In odio quam, vestibulum non  
+			   faucibus sit amet, posuere id lectus.</p>
+			  </div>
+
+			  <a>Design pro school 2009</a>
+			  <div>
+			  <p>Aliquam quis dui at orci mattis tincidunt et vel risus. In odio quam, vestibulum non
+			   faucibus sit amet, posuere id lectus.</p>
+				</div>
+			</div>
+			
+			<script src="jquery.accordion.js"></script>
+			<script>
+			$("#list1").accordion();
+			</script>
+		</body>
+
+</html>
