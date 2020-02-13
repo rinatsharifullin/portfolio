@@ -1,12 +1,16 @@
 
 
 document.addEventListener('DOMContentLoaded', function(){
-
+	window.addEventListener('resize', styleOnResize);
+	document.getElementById('browserSize').innerHTML  = ('width ' + window.innerWidth + ', height ' + window.innerHeight);
   populateContent();
 });
 
 
-
+function styleOnResize(){
+	document.getElementById('browserSize').innerHTML  = ('width ' + window.innerWidth + ', height ' + window.innerHeight);
+	console.log(document.getElementById('browserSize').innerHTML );
+}
 
 
 
