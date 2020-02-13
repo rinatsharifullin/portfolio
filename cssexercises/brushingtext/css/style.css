@@ -1,0 +1,157 @@
+/*body {
+  margin: 0;
+  padding: 0;
+  width:1080px;
+  margin:auto;
+}
+nav{
+	text-align:right;
+}
+
+a{
+	border:solid #dfe1e5 1px;
+	padding:7px 12px;
+	border-radius:15px;
+	text-decoration:none;
+}
+a:hover{
+	box-shadow:0 1px 6px 0 rgba(32,33,36,0.28);
+	text-decoration:underline;
+}*/
+body{
+	background-image:url("../images/backgroung.png");
+	background-attachment:fixed;
+}
+h1, h2{
+	text-align:center;
+}
+section, .container {
+	width:100%;
+	border:1px solid #ccc;
+	border-radius:15px;
+	box-shadow: 2px 2px 5px rgba(32,33,36,0.28);
+	padding:1% 1%;
+	margin: 0 0 2% 0;
+	background-color:white;
+	box-sizing: border-box;
+}
+section p:first-line {text-indent:40px;}
+img{
+	float:right;
+	box-shadow: 2px 2px 5px rgba(32,33,36,0.28);
+	max-width:100%;
+	height: auto;
+
+}
+#examplelink{
+	float:none;
+}
+.date{
+	color:gray;
+	background-image:url("../images/calendar-alt.svg");
+	background-repeat:no-repeat;
+	
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-align: justify;
+}
+
+
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
+	input[type=submit] {
+	  background-color: rgba(32,33,36,0.28);
+	  color: black;
+	  padding: 12px 20px;
+	  border: none;
+	  border-radius: 4px;
+	  cursor: pointer;
+	}
+
+	input[type=submit]:hover {
+	  background-color: gray;
+	  color:white;
+	}
+
+	/*Styling Home page SVG text*/
+	.path {
+	  stroke-dasharray: 2000;
+	  stroke-dashoffset: 2000;
+	  animation: dash 5s linear  forwards ;
+	}
+
+	@keyframes dash {
+	  
+	  to {
+		stroke-dashoffset: 0;
+	  }
+	}
+	/*Styling About page
+	/* Style the tab */
+	.tab {
+	  float: left;
+	  border: 1px solid #ccc;
+	  background-color: #f1f1f1;
+	  width: 30%;
+	  height: 1000px;
+	  box-sizing: border-box;
+	}
+	
+	/* Style the buttons inside the tab */
+	.tablinks, .aboutnonbutton {
+	  display: block;
+	  background-color: inherit;
+	  color: black;
+	  padding: 22px 16px;
+	  width: 100%;
+	  border: none;
+	  outline: none;
+	  text-align: left;
+	  cursor: pointer;
+	  font-size: 17px;
+	}
+
+	/* Change background color of buttons on hover */
+	.tab button:hover {
+	  background-color: #ddd;
+	}
+
+	/* Create an active/current "tab button" class */
+	.tab button.active {
+	  background-color: #ccc;
+	}
+
+	/* Style the tab content */
+	.tabcontent {
+	  float: left;
+	  padding: 0px 12px;
+	  border: 1px solid #ccc;
+	  width: 70%;
+	  border-left: none;
+	  height: 1000px;
+	  display: none;
+	  box-sizing: border-box;
+	}
+	/*Style work expirience and education lines*/
+	.aboutnonbutton{
+		background-color:lightgray;
+	}
+	/* Clear floats after the tab */
+	.clearfix::after {
+	  content: "";
+	  clear: both;
+	  display: table;
+	}
+	
