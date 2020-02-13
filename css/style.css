@@ -87,9 +87,9 @@ input[type=text], select, textarea {
 
 	/*Styling Home page SVG text*/
 	.path {
-	  stroke-dasharray: 2000;
-	  stroke-dashoffset: 2000;
-	  animation: dash 7s linear  forwards ;
+	  stroke-dasharray: 200;
+	  stroke-dashoffset: 200;
+	  animation: dash 3s linear  forwards ;
 	}
 
 	@keyframes dash {
