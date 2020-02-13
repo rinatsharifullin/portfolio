@@ -125,6 +125,7 @@ function provideHTMLandStyle(){
 	navElement = document.createElement('nav');
 	navElement.id = "mobileicon";
 	navElement.innerHTML='&#9776';
+	navElement.style.textAlign='center';
 	navElement.style.display='none';
 	document.body.insertBefore(navElement, document.body.firstChild);
 	
