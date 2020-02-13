@@ -18,6 +18,31 @@
 			<h1>CSS Exercises.</h1>
 <!-------------------------------------------->			
 			<section>
+				<h2>Hand writing animations 2.</h2>
+				<p class="date">13 February 2020</p>
+				<p><img src="images/brushingtext-min.jpg" alt="brushingtext-min.jpg" width="794px" height="225px" ></img>
+				Hand writing animations created with help of InkScape software.
+				</p>
+				<h2>CSS Code</h2>
+				<pre>
+	.path {
+	  stroke-dasharray: 2000;
+	  stroke-dashoffset: 2000;
+	  animation: dash 5s linear  forwards ;
+	}
+
+	@keyframes dash {
+	  
+	  to {
+		stroke-dashoffset: 0;
+	  }
+	}			
+				</pre>
+				<a id ="examplelink" href="cssexercises/brushingtext/index.html">See webpage</a>
+			</section>
+<!-------------------------------------------->			
+
+			<section>
 				<h2>One page website.</h2>
 				<p class="date">10 February 2020</p>
 				<p><img src="images/onepages.jpg" alt="onepages.jpg" width="555px" height="250px" ></img>
