@@ -2,6 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', function(){
 	window.addEventListener('resize', styleOnResize);
+	document.getElementById('browserSize').innerHTML  = ('width ' + window.innerWidth + ', height ' + window.innerHeight);
   populateContent();
 });
 
