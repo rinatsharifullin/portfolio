@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', function(){
 	provideHTMLandStyle();
 	window.addEventListener('resize', styleOnResize);
 	document.getElementById('mobileicon').addEventListener('click', function(){
-		if(document.getElementById('myNav').style.display == 'none'){
+		if(document.getElementById('myNav').style.display === 'none'){
 			document.getElementById('myNav').style.display = 'block';
-			document.getElementById('mobileicon').innerHTML='&#9932';
+			document.getElementById('mobileicon').innerHTML='&#88';
 		}else{
 			document.getElementById('myNav').style.display = 'none';
 			document.getElementById('mobileicon').innerHTML='&#9776';
@@ -134,7 +134,7 @@ function provideHTMLandStyle(){
 	myBody.style.margin = 'auto';
 	myBody.style.padding = '0';
 	myBody.style.maxWidth = '1080px';
-	myBody.style.fontFamily = 'font-family: "Lato", sans-serif';
+	myBody.style.fontFamily = 'font-family: "Calibri", sans-serif';
 	
 	/*Style nav*/
 	var myNav = document.getElementById("myNav");

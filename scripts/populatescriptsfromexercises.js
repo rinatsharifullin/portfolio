@@ -94,7 +94,7 @@ function populateContent() {
 	myBody.style.margin = 'auto';
 	myBody.style.padding = '0';
 	myBody.style.maxWidth = '1080px';
-	myBody.style.fontFamily = 'font-family: "Lato", sans-serif';
+	myBody.style.fontFamily = 'font-family: "Calibri", sans-serif';
 	
 	
 	
