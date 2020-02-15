@@ -43,13 +43,9 @@ function populateContent() {
 	aElementHome.className="nav";
 	aElementHome.href = "../../index.html";		//Assign to A tag href property
 	
-	aElementJavaScript = document.createElement('a');	
-	aElementJavaScript.className="nav";
-	aElementJavaScript.href =  "../../javascript.html";
-	
-	aElementCSS = document.createElement('a');	
-	aElementCSS.className="nav";
-	aElementCSS.href =  "../../css.html";
+	aElementWork = document.createElement('a');	
+	aElementWork.className="nav";
+	aElementWork.href =  "../../work.html";
 	
 	aElementBlog = document.createElement('a');	
 	aElementBlog.className="nav";
@@ -64,23 +60,20 @@ function populateContent() {
 	aElementContact.href =  "../../contact.html";
 	
 	var textElementHome = document.createTextNode('Home');	//Give to A tag text content
-	var textElementJavaScript = document.createTextNode('Java Script Exercises');
-	var textElementCSS = document.createTextNode('CSS Exercises');
+	var textElementWork = document.createTextNode('Work');
 	var textElementBlog = document.createTextNode('Blog');
 	var textElementAbout = document.createTextNode('About');
 	var textElementContact = document.createTextNode('Contact');
 
 	
 	aElementHome.appendChild(textElementHome);	//Append text content to A tag
-	aElementJavaScript.appendChild(textElementJavaScript);	
-	aElementCSS.appendChild(textElementCSS);
+	aElementWork.appendChild(textElementWork);	
 	aElementBlog.appendChild(textElementBlog);
 	aElementAbout.appendChild(textElementAbout);
 	aElementContact.appendChild(textElementContact);
 	
 	pElement.appendChild(aElementHome);	//Append A tag to P tag
-	pElement.appendChild(aElementJavaScript);
-	pElement.appendChild(aElementCSS);
+	pElement.appendChild(aElementWork);
 	pElement.appendChild(aElementBlog);
 	pElement.appendChild(aElementAbout);;
 	pElement.appendChild(aElementContact);
