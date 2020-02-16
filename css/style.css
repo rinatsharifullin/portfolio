@@ -33,11 +33,10 @@ body{
 #myNav{
 	text-align:center;
 	display:block;
-	overflow-x:visible;
 }
 #myNav a:link, #myNav a:visited{
 	border:1px solid #ccc;
-	padding:1vw 2vw;
+	padding:0.5vw 1vw;
 	border-radius:0.5vw;
 	background-color:#fff;
 	text-decoration:none;
@@ -47,8 +46,8 @@ body{
 }
 #myNav a{
 	display:inline-block;
-	width:15vw;
-	font-size:16px;
+	width:10vw;
+	font-size:18px;
 }
 #myNav a:hover, #myNav a:active{
 	box-shadow:0 1px 6px 0 rgba(32,33,36,0.28);
