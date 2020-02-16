@@ -19,16 +19,16 @@ body{
 	text-decoration:none;
 	color:#808080;
 	display:inline-block;
-	width:100px;
+	width:10%;
 	font-size:1.3rem;
 	box-shadow:none;
-	transition:border 0.5s;
+	
 }
 #myNav a:hover, #myNav a:active{
 	box-shadow:0 1px 6px 0 rgba(32,33,36,0.28);
 	color:#000;
-	border-bottom:2px solid red;
-	
+	border-bottom:1px solid red;
+	transition:border-bottom 0.5s;
 }
 h1, h2{
 	text-align:center;
